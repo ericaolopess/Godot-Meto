@@ -1,0 +1,232 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://tileset/Tiles/2.png" type="Texture" id=1]
+[ext_resource path="res://tileset/Tiles/1.png" type="Texture" id=2]
+[ext_resource path="res://tileset/BG/fundo-fotografico-tecido-floresta-mundo-da-fantasia-50x30m-D_NQ_NP_621780-MLB28909771649_122018-F.jpg" type="Texture" id=3]
+[ext_resource path="res://tileset/Tiles/Tile (2).png" type="Texture" id=4]
+[ext_resource path="res://tileset/Tiles/Tile (3).png" type="Texture" id=5]
+[ext_resource path="res://tileset/Tiles/Tile (14).png" type="Texture" id=6]
+[ext_resource path="res://tileset/Tiles/Tile (16).png" type="Texture" id=7]
+[ext_resource path="res://tileset/Tiles/Tile (15).png" type="Texture" id=8]
+[ext_resource path="res://scene/cogumelo_pink.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scene/Player.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scene/cogumelo_verde.tscn" type="PackedScene" id=11]
+[ext_resource path="res://assets/Tree_1.png" type="Texture" id=12]
+[ext_resource path="res://assets/Tree_3.png" type="Texture" id=13]
+[ext_resource path="res://assets/Sign_2.png" type="Texture" id=14]
+[ext_resource path="res://scene/Coin.tscn" type="PackedScene" id=15]
+[ext_resource path="res://script/SairTela.gd" type="Script" id=16]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 128, 32, 0, 32, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 128, 32, 0, 32, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 128, 32, 0, 32, 0, 0, 128, 0 )
+
+[sub_resource type="TileSet" id=8]
+0/name = "1.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "2.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Tile (2).png 2"
+2/texture = ExtResource( 4 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Tile (3).png 3"
+3/texture = ExtResource( 5 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Tile (14).png 4"
+4/texture = ExtResource( 6 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Tile (15).png 5"
+5/texture = ExtResource( 8 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Tile (16).png 6"
+6/texture = ExtResource( 7 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 8474.2, 71.6101 )
+
+[node name="Game" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [ 1960.44, 1951.36 ]
+}
+
+[node name="fundo-fotografico-tecido-floresta-mundo-da-fantasia-50x30m-D_NQ_NP_621780-MLB28909771649_122018-F" type="Sprite" parent="."]
+position = Vector2( 2660.68, 175.086 )
+scale = Vector2( 5.63427, 5.66624 )
+texture = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 317.247, 73.4801 )
+tile_set = SubResource( 8 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 27
+format = 1
+tile_data = PoolIntArray( -720904, 0, 0, -655368, 0, 0, -589832, 0, 0, -524296, 0, 0, -458760, 0, 0, -393224, 0, 0, -327688, 0, 0, -262152, 0, 0, -196616, 0, 0, -262065, 2, 0, -131080, 0, 0, -196530, 2, 0, -65544, 0, 0, -130995, 2, 0, -8, 0, 0, -65460, 2, 0, 65528, 0, 0, 13, 4, 0, 14, 5, 0, 15, 5, 0, 16, 5, 0, 17, 6, 0, 74, 2, 0, 75, 2, 0, 131064, 0, 0, 131065, 2, 0, 131066, 2, 0, 131067, 2, 0, 131068, 2, 0, 131069, 2, 0, 131070, 2, 0, 131071, 2, 0, 65536, 2, 0, 65537, 2, 0, 65538, 2, 0, 65539, 2, 0, 65540, 2, 0, 65541, 2, 0, 65542, 3, 0, 65565, 4, 0, 65566, 5, 0, 65567, 6, 0, 65609, 2, 0, 65610, 2, 0, 196600, 0, 0, 131078, 2, 0, 131079, 2, 0, 131080, 2, 0, 131081, 2, 0, 131082, 2, 0, 131083, 2, 0, 131084, 2, 0, 131085, 2, 0, 131089, 2, 0, 131090, 2, 0, 131091, 2, 0, 131092, 2, 0, 131093, 2, 0, 131110, 2, 0, 131111, 2, 0, 131112, 2, 0, 131113, 2, 0, 131114, 2, 0, 131115, 2, 0, 131116, 2, 0, 131117, 2, 0, 131118, 2, 0, 131119, 2, 0, 131120, 2, 0, 131121, 2, 0, 131122, 2, 0, 131123, 2, 0, 131124, 2, 0, 131125, 2, 0, 131126, 2, 0, 131127, 2, 0, 131128, 2, 0, 131144, 2, 0, 131145, 2, 0, 262136, 0, 0, 196630, 2, 0, 196631, 2, 0, 196632, 2, 0, 196633, 2, 0, 196634, 2, 0, 196635, 2, 0, 196636, 2, 0, 196637, 2, 0, 196638, 2, 0, 196639, 2, 0, 196640, 2, 0, 196641, 2, 0, 196642, 2, 0, 196643, 2, 0, 196644, 2, 0, 196645, 2, 0, 196664, 2, 0, 196665, 2, 0, 196666, 2, 0, 196667, 2, 0, 196668, 2, 0, 196669, 2, 0, 196670, 2, 0, 196671, 2, 0, 196672, 2, 0, 196679, 2, 0, 196680, 2, 0, 327672, 0, 0, 262214, 2, 0, 262215, 2, 0, 393208, 0, 0, 327695, 4, 0, 327696, 5, 0, 327697, 6, 0, 327748, 2, 0, 327749, 2, 0, 327750, 2, 0, 458744, 0, 0, 393221, 4, 0, 393222, 5, 0, 393223, 5, 0, 393224, 5, 0, 393225, 6, 0, 393265, 2, 0, 393266, 2, 0, 393267, 2, 0, 393268, 2, 0, 393269, 2, 0, 393270, 2, 0, 393271, 2, 0, 393272, 2, 0, 393281, 2, 0, 393282, 2, 0, 393283, 2, 0, 524280, 0, 0, 458794, 2, 0, 458795, 2, 0, 458796, 2, 0, 458797, 2, 0, 458798, 2, 0, 458799, 2, 0, 458800, 2, 0, 458801, 2, 0, 458808, 2, 0, 458809, 2, 0, 458814, 2, 0, 458815, 2, 0, 458816, 2, 0, 458817, 2, 0, 589816, 0, 0, 589820, 2, 0, 589821, 2, 0, 589822, 2, 0, 589823, 2, 0, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 524292, 2, 0, 524293, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524297, 2, 0, 524298, 2, 0, 524299, 2, 0, 524302, 2, 0, 524303, 2, 0, 524304, 2, 0, 524305, 2, 0, 524306, 2, 0, 524315, 2, 0, 524316, 2, 0, 524317, 2, 0, 524318, 2, 0, 524319, 2, 0, 524320, 2, 0, 524321, 2, 0, 524322, 2, 0, 524325, 2, 0, 524326, 2, 0, 524327, 2, 0, 524328, 2, 0, 524329, 2, 0, 524345, 2, 0, 524346, 2, 0, 524347, 2, 0, 524348, 2, 0, 524349, 2, 0, 524350, 2, 0, 655352, 0, 0, 655353, 2, 0, 655354, 2, 0, 655355, 2, 0, 589842, 2, 0, 589843, 2, 0, 589844, 2, 0, 589845, 2, 0, 589846, 2, 0, 589847, 2, 0, 589848, 2, 0, 589849, 2, 0, 589850, 2, 0, 589851, 2, 0, 589858, 2, 0, 589859, 2, 0, 589860, 2, 0, 720888, 0, 0, 786424, 0, 0, 851960, 0, 0 )
+
+[node name="Tree_3" type="Sprite" parent="."]
+position = Vector2( 717.244, -283.452 )
+scale = Vector2( 3.78723, 3.5674 )
+texture = ExtResource( 13 )
+
+[node name="Tree_1" type="Sprite" parent="."]
+position = Vector2( 541.505, 1048.14 )
+scale = Vector2( 1.80497, 2.41479 )
+texture = ExtResource( 12 )
+
+[node name="Sign_2" type="Sprite" parent="."]
+position = Vector2( 3637.39, 392.302 )
+scale = Vector2( 2.00405, 2.09425 )
+texture = ExtResource( 14 )
+
+[node name="Coletaveis" type="Node2D" parent="."]
+
+[node name="cogumelo_pink" parent="Coletaveis" instance=ExtResource( 9 )]
+position = Vector2( 1464, 290.619 )
+
+[node name="cogumelo_pink2" parent="Coletaveis" instance=ExtResource( 9 )]
+position = Vector2( 1552, 290.618 )
+rotation = 0.0106986
+
+[node name="cogumelo_pink3" parent="Coletaveis" instance=ExtResource( 9 )]
+position = Vector2( 1632, 290.618 )
+
+[node name="cogumelo_pink4" parent="Coletaveis" instance=ExtResource( 11 )]
+position = Vector2( 1306.06, 284.436 )
+
+[node name="Coin" parent="Coletaveis" instance=ExtResource( 15 )]
+position = Vector2( 765.075, 29.27 )
+
+[node name="Coin2" parent="Coletaveis" instance=ExtResource( 15 )]
+position = Vector2( 611.372, 30.3721 )
+
+[node name="Coin3" parent="Coletaveis" instance=ExtResource( 15 )]
+position = Vector2( 914.113, 30.3721 )
+
+[node name="Player" parent="." instance=ExtResource( 10 )]
+position = Vector2( -107.751, 67.9534 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 3, 3 )
+limit_left = -417
+limit_right = 9999996
+limit_bottom = 1950
+
+[node name="areaMorrer" type="Area2D" parent="."]
+script = ExtResource( 16 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="areaMorrer"]
+position = Vector2( 4082.84, 1774.69 )
+shape = SubResource( 9 )
+[connection signal="body_entered" from="areaMorrer" to="areaMorrer" method="_on_Area2D_body_entered"]
